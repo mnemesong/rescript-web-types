@@ -1,4 +1,4 @@
-type routeType =
+type method =
     [ #checkout
     | #copy
     | #get
