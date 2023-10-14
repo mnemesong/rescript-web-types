@@ -1,6 +1,6 @@
 {
   "name": "rescript-web-types",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "rescript general types for web entities package",
   "scripts": {
     "res:build": "rescript",

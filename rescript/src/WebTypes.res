@@ -49,3 +49,8 @@ type errorStatus =
     | #503
     | #504
     ]
+
+type baseAuth = {
+    username: string,
+    password: string
+}
