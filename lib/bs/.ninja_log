@@ -1,0 +1,6 @@
+# ninja log v6
+0	25	13580707623342465	rescript/src/WebTypes.ast	c06e4eebff25d1ec
+25	61	13580707623702485	rescript/src/WebTypes.d	2a93d1b2c0f0cb7b
+61	100	13580707624102508	rescript/src/WebTypes.cmj	edad67c38213b25d
+61	100	13580707624102508	rescript/src/WebTypes.cmi	edad67c38213b25d
+61	100	13580707624102508	../js/rescript/src/WebTypes.bs.js	edad67c38213b25d

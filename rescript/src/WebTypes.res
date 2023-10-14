@@ -1,10 +1,3 @@
-# rescript-web-types
-rescript general types for web entities package
-
-
-## Types
-```rescript
-//WebTypes.res
 type routeType =
     [ #checkout
     | #copy
@@ -56,11 +49,3 @@ type errorStatus =
     | #503
     | #504
     ]
-```
-
-## Author
-Anatoly Starodubtsev
-tostar74@mail.ru
-
-## License
-MIT

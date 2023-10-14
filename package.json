@@ -1,0 +1,23 @@
+{
+  "name": "rescript-web-types",
+  "version": "1.0.0",
+  "description": "rescript general types for web entities package",
+  "scripts": {
+    "res:build": "rescript",
+    "res:dev": "rescript build -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mnemesong/rescript-web-types.git"
+  },
+  "keywords": [],
+  "author": "Anatoly Starodubtsev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mnemesong/rescript-web-types/issues"
+  },
+  "homepage": "https://github.com/mnemesong/rescript-web-types#readme",
+  "devDependencies": {
+    "rescript": "^10.1.4"
+  }
+}

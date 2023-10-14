@@ -1,0 +1,13 @@
+rescript = 1
+rule astj
+  command = "D:\rescript-projects\rescript-web-types\node_modules\rescript\win32\bsc.exe"  -bs-v 10.1.4  -absname -bs-ast -o $out $i
+o rescript\src\WebTypes.ast : astj ..\..\rescript\src\WebTypes.res
+rule deps
+  command = "D:\rescript-projects\rescript-web-types\node_modules\rescript\win32\bsb_helper.exe" -hash 49a935b3514fe732a659d176e27fd4b5 $in
+  restat = 1
+o rescript\src\WebTypes.d : deps rescript\src\WebTypes.ast
+rule mij
+  command = "D:\rescript-projects\rescript-web-types\node_modules\rescript\win32\bsc.exe" -I "rescript\src" -I rescript   -bs-package-name rescript-web-types -bs-package-output commonjs:lib\js\$in_d:.bs.js $i
+  dyndep = 1
+  restat = 1
+o rescript\src\WebTypes.cmj rescript\src\WebTypes.cmi ..\js\rescript\src\WebTypes.bs.js : mij rescript\src\WebTypes.ast

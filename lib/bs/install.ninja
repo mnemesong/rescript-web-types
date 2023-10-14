@@ -1,0 +1,10 @@
+rescript = 1
+rule cp
+  command = cmd.exe /C copy /Y $i $out >NUL
+rule touch
+ command = cmd.exe /C type nul >>$out & copy $out+,, >NUL
+o WebTypes.cmi : cp ..\bs\rescript\src\WebTypes.cmi
+o WebTypes.cmj : cp ..\bs\rescript\src\WebTypes.cmj
+o WebTypes.cmt : cp ..\bs\rescript\src\WebTypes.cmt
+o WebTypes.res : cp ..\..\rescript\src\WebTypes.res
+build install.stamp : touch WebTypes.cmi WebTypes.cmj 
